@@ -8,3 +8,6 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# SSH multi-config files (http://superuser.com/questions/247564/is-there-a-way-for-one-ssh-config-file-to-include-another-one)
+alias ssh="cat ~/.ssh/config.d/* > ~/.ssh/config; ssh"
